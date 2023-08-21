@@ -2,15 +2,45 @@
 <html>
   <head>
     <title>茶道教室のご案内 | 江戸千家渭白流のホームページ</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="江戸千家渭白流の公式Webサイト。茶道教室のご案内やお稽古の風景のご紹介しております。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|M+PLUS+Rounded+1c:400,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <header>
+        <p class="page-desc">東京都新宿区南榎町7　<span class="tel">Tel：03-3269-3835</span></p>
+        <h1 class="page-title"><a>江戸千家</a>渭白流</h1>
+        <p class="page-desc">〜 茶道教室のご案内やお稽古の風景のご紹介 〜</p>
+    </header>
+
+    <section>
+        <div class="top-box">
+            <ul>
+                <li class="top-btn"><a href="./index.html">ホーム</a></li>
+                <li class="top-btn"><a href="./intro.html">ごあいさつ</a></li>
+                <li class="top-btn"><a href="./schedule-top.html">スケジュール</a></li>
+            </ul>
+            <ul>
+                <li class="top-btn"><a href="./lesson-top.html">お稽古のご案内</a></li>
+                <li class="top-btn"><a href="./access.html">アクセス</a></li>
+                <li class="top-btn"><a href="./blog-top.html">ブログ</a></li>
+            </ul>
+        </div>
+    </section>
     <header>
       <div>
         <% if user_signed_in? %>
