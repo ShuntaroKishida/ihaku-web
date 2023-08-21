@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>IhakuWeb</title>
+    <title>茶道教室のご案内 | 江戸千家渭白流のホームページ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,28 @@
   </head>
 
   <body>
+    <header>
+      <div>
+        <% if user_signed_in? %>
+          <div>
+            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
+            <%= link_to "投稿する", "#" %>
+          </div>
+        <% else %>
+          <div>
+            <%= link_to "ログイン", new_user_session_path %>
+            <%= link_to "新規登録", new_user_registration_path %>
+          </div>
+        <% end %>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <p>
+        Copyright PicTweet 2019.
+      </p>
+    </footer>
   </body>
 </html>
