@@ -27,6 +27,16 @@
       <p class="page-desc">〜 茶道教室のご案内やお稽古の風景のご紹介 〜</p>
     </header>
 
+    <div class="user">
+      <% if user_signed_in? %>
+        <li><%= link_to current_user.name + " さま", edit_user_path(current_user) %></li>
+        <li><%= link_to 'ご連絡', "#" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </div>
+
     <section>
       <div class="top-box">
         <ul>
