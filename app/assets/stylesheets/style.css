@@ -65,66 +65,36 @@ table td {
 /*
 GALLERY
 =========================================*/
-.slick-prev, .slick-next {
-    position: absolute;
-    z-index: 3;
-    top: 42%;
-    cursor: pointer;
-    outline: none;
-    border-top: 4px solid #fff;
-    border-right: 4px solid #fff;
-    height: 25px;
-    width: 25px;
-}
-
-.slick-prev {
-    left: 2.5%;
-    transform: rotate(-135deg);
-}
-
-.slick-next {
-    right: 2.5%;
-    transform: rotate(45deg);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    vertical-align: bottom;
-    border-radius: 10px;
+.gallery {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .gallery-image {
-    margin-bottom: 20px;
+    width: min(100%, calc(38rem - 2rem));
+    margin: auto;
+    position: relative;
+}
+
+.gallery-image img {
+    border-radius: 20px;
+    object-fit: cover;
     width: 100%;
 }
 
-.gallery-thumbnails li {
-    cursor: pointer;
-    outline: none;
-    width: 23%!important;
-    margin: 1%;
-    text-align: center;
-}
-
-.gallery-thumbnails li img {
-    opacity: .6;
-}
-
-.gallery-thumbnails li.slick-current img {
-    opacity: 1;
-}
-
-.gallery-thumbnails .slick-track {
-    transform: unset;
-}
-
 .gallery-thumbnails {
-    transform: translate3d(0, 0, 0);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 1rem 0;
 }
 
-.gallery-thumbnails li a {
-    font-size: .5rem;
+.gallery-thumbnails img {
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 /*
