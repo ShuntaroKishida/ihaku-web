@@ -30,14 +30,14 @@
     <section>
       <div class="top-box">
         <ul>
-          <li class="top-btn"><a href="./index.html">ホーム</a></li>
-          <li class="top-btn"><a href="./intro.html">ごあいさつ</a></li>
-          <li class="top-btn"><a href="./schedule-top.html">スケジュール</a></li>
+          <li class="top-btn"><%= link_to 'ホーム', home_index_path %></li>
+          <li class="top-btn"><%= link_to 'ごあいさつ', intro_index_path %></li>
+          <li class="top-btn"><%= link_to 'スケジュール', schedule_index_path %></li>
         </ul>
         <ul>
-          <li class="top-btn"><a href="./lesson-top.html">お稽古のご案内</a></li>
-          <li class="top-btn"><a href="./access.html">アクセス</a></li>
-          <li class="top-btn"><a href="./blog-top.html">ブログ</a></li>
+          <li class="top-btn"><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+          <li class="top-btn"><%= link_to 'アクセス', access_index_path %></li>
+          <li class="top-btn"><%= link_to 'ブログ', blog_index_path %></li>
         </ul>
       </div>
     </section>
@@ -48,24 +48,24 @@
           <div class="side-box">
             <h3>Menu</h3>
             <ul>
-              <li><a href="./index.php">ホーム</a></li>
-              <li><a href="./intro.php">ごあいさつ</a></li>
-              <li><a href="./schedule-top.php">スケジュール</a></li>
-              <li><a href="./lesson-top.php">お稽古のご案内</a></li>
-              <li><a href="./access.php">アクセス</a></li>
-              <li><a href="./blog-top.php">ブログ</a></li>
+              <li><%= link_to 'ホーム', home_index_path %></li>
+              <li><%= link_to 'ごあいさつ', intro_index_path %></li>
+              <li><%= link_to 'スケジュール', schedule_index_path %></li>
+              <li><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+              <li><%= link_to 'アクセス', access_index_path %></li>
+              <li><%= link_to 'ブログ', blog_index_path %></li>
             </ul>
           </div>
           <div class="side-box">
             <h3>Popular Posts</h3>
             <ul>
-              <li><a href="./blog20230709.php">総会</a></li>
-              <li><a href="./blog20230702.php">勉強会（夏）</a></li>
-              <li><a href="./blog20230611.php">伝授式（師範令）</a></li>
-              <li><a href="./blog20230514.php">伝授式（初・中）</a></li>
-              <li><a href="./blog20230305.php">研究会（春）</a></li>
-              <li><a href="./blog20230219.php">勉強会（春）</a></li>
-              <li><a href="./blog20230108.php">2023 初釜</a></li>
+              <li><%= link_to '総会', "#" %></li>
+              <li><%= link_to '勉強会（夏）', "#" %></li>
+              <li><%= link_to '伝授式（師範令）', "#" %></li>
+              <li><%= link_to '伝授式（初・中）', "#" %></li>
+              <li><%= link_to '研究会（春）', "#" %></li>
+              <li><%= link_to '勉強会（春）', "#" %></li>
+              <li><%= link_to '2023 初釜', "#" %></li>
             </ul>
           </div>
         </div>
@@ -79,14 +79,14 @@
       <p>東京都新宿区南榎町7　Tel：03-3269-3835</p>
       <div class="footer-nav">
         <ul>
-          <li><a href="./index.php">ホーム</a></li>
-          <li><a href="./intro.php">ごあいさつ</a></li>
-          <li><a href="./schedule-top.php">スケジュール</a></li>
+          <li><%= link_to 'ホーム', home_index_path %></li>
+          <li><%= link_to 'ごあいさつ', intro_index_path %></li>
+          <li><%= link_to 'スケジュール', schedule_index_path %></li>
         </ul>
         <ul>
-          <li><a href="./lesson-top.php">お稽古のご案内</a></li>
-          <li><a href="./access.php">アクセス</a></li>
-          <li><a href="./blog-top.php">ブログ</a></li>
+          <li><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+          <li><%= link_to 'アクセス', access_index_path %></li>
+          <li><%= link_to 'ブログ', blog_index_path %></li>
         </ul>
       </div>
       <p><small>&copy; 2023 江戸千家 渭白会</small></p>
