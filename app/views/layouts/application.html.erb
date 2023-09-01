@@ -31,7 +31,7 @@
       <div class="top-box">
         <ul>
           <li class="top-btn"><%= link_to 'ホーム', home_index_path %></li>
-          <li class="top-btn"><%= link_to 'ごあいさつ', intro_index_path %></li>
+          <li class="top-btn"><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
           <li class="top-btn"><%= link_to 'スケジュール', schedule_index_path %></li>
         </ul>
         <ul>
@@ -49,7 +49,7 @@
             <h3>Menu</h3>
             <ul>
               <li><%= link_to 'ホーム', home_index_path %></li>
-              <li><%= link_to 'ごあいさつ', intro_index_path %></li>
+              <li><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
               <li><%= link_to 'スケジュール', schedule_index_path %></li>
               <li><%= link_to 'お稽古のご案内', lesson_index_path %></li>
               <li><%= link_to 'アクセス', access_index_path %></li>
@@ -80,7 +80,7 @@
       <div class="footer-nav">
         <ul>
           <li><%= link_to 'ホーム', home_index_path %></li>
-          <li><%= link_to 'ごあいさつ', intro_index_path %></li>
+          <li><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
           <li><%= link_to 'スケジュール', schedule_index_path %></li>
         </ul>
         <ul>
