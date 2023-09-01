@@ -22,47 +22,74 @@
 
   <body>
     <header>
-        <p class="page-desc">東京都新宿区南榎町7　<span class="tel">Tel：03-3269-3835</span></p>
-        <h1 class="page-title"><a>江戸千家</a>渭白流</h1>
-        <p class="page-desc">〜 茶道教室のご案内やお稽古の風景のご紹介 〜</p>
+      <p class="page-desc">東京都新宿区南榎町7　<span class="tel">Tel：03-3269-3835</span></p>
+      <h1 class="page-title"><a>江戸千家</a>渭白流</h1>
+      <p class="page-desc">〜 茶道教室のご案内やお稽古の風景のご紹介 〜</p>
     </header>
 
     <section>
-        <div class="top-box">
-            <ul>
-                <li class="top-btn"><a href="./index.html">ホーム</a></li>
-                <li class="top-btn"><a href="./intro.html">ごあいさつ</a></li>
-                <li class="top-btn"><a href="./schedule-top.html">スケジュール</a></li>
-            </ul>
-            <ul>
-                <li class="top-btn"><a href="./lesson-top.html">お稽古のご案内</a></li>
-                <li class="top-btn"><a href="./access.html">アクセス</a></li>
-                <li class="top-btn"><a href="./blog-top.html">ブログ</a></li>
-            </ul>
-        </div>
-    </section>
-    <header>
-      <div>
-        <% if user_signed_in? %>
-          <div>
-            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
-            <%= link_to "投稿する", "#" %>
-          </div>
-        <% else %>
-          <div>
-            <%= link_to "ログイン", new_user_session_path %>
-            <%= link_to "新規登録", new_user_registration_path %>
-          </div>
-        <% end %>
+      <div class="top-box">
+        <ul>
+          <li class="top-btn"><%= link_to 'ホーム', home_index_path %></li>
+          <li class="top-btn"><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
+          <li class="top-btn"><%= link_to 'スケジュール', schedule_index_path %></li>
+        </ul>
+        <ul>
+          <li class="top-btn"><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+          <li class="top-btn"><%= link_to 'アクセス', access_index_path %></li>
+          <li class="top-btn"><%= link_to 'ブログ', blog_index_path %></li>
+        </ul>
       </div>
-    </header>
+    </section>
 
-    <%= yield %>
+    <div class="containar">
+      <aside>
+        <div class="side-area">
+          <div class="side-box">
+            <h3>Menu</h3>
+            <ul>
+              <li><%= link_to 'ホーム', home_index_path %></li>
+              <li><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
+              <li><%= link_to 'スケジュール', schedule_index_path %></li>
+              <li><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+              <li><%= link_to 'アクセス', access_index_path %></li>
+              <li><%= link_to 'ブログ', blog_index_path %></li>
+            </ul>
+          </div>
+          <div class="side-box">
+            <h3>Popular Posts</h3>
+            <ul>
+              <li><%= link_to '総会', "#" %></li>
+              <li><%= link_to '勉強会（夏）', "#" %></li>
+              <li><%= link_to '伝授式（師範令）', "#" %></li>
+              <li><%= link_to '伝授式（初・中）', "#" %></li>
+              <li><%= link_to '研究会（春）', "#" %></li>
+              <li><%= link_to '勉強会（春）', "#" %></li>
+              <li><%= link_to '2023 初釜', "#" %></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <%= yield %>
+
+    </div>
 
     <footer>
-      <p>
-        Copyright PicTweet 2019.
-      </p>
+      <p>東京都新宿区南榎町7　Tel：03-3269-3835</p>
+      <div class="footer-nav">
+        <ul>
+          <li><%= link_to 'ホーム', home_index_path %></li>
+          <li><%= link_to 'ごあいさつ', intro_index_path, data: { turbo: false } %></li>
+          <li><%= link_to 'スケジュール', schedule_index_path %></li>
+        </ul>
+        <ul>
+          <li><%= link_to 'お稽古のご案内', lesson_index_path %></li>
+          <li><%= link_to 'アクセス', access_index_path %></li>
+          <li><%= link_to 'ブログ', blog_index_path %></li>
+        </ul>
+      </div>
+      <p><small>&copy; 2023 江戸千家 渭白会</small></p>
     </footer>
   </body>
 </html>
