@@ -1,0 +1,9 @@
+<main>
+  <div class="new_tweet">
+    <h3>連絡内容の入力</h3>
+    <%= form_with(model: @tweet, local: true, class: "new_tweet_form") do |form| %>
+      <%= form.text_area :text, rows: "6", class: "new_text" %>
+      <%= form.submit "SEND", class: "send_btn" %>
+    <% end %>
+  </div>
+</main>

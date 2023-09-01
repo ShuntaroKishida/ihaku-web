@@ -30,7 +30,7 @@
     <div class="user">
       <% if user_signed_in? %>
         <li><%= link_to current_user.name + " さま", edit_user_path(current_user) %></li>
-        <li><%= link_to 'ご連絡', "#" %></li>
+        <li><%= link_to '掲示板', tweets_path %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>

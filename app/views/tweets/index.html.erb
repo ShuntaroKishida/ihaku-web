@@ -1,0 +1,33 @@
+<main>
+  <div class="teewt_new_btn">
+    <%= link_to "連絡する", new_tweet_path %>
+  </div>
+  <div class="tweet_all">
+    <% @tweets.each do |tweet| %>
+      <% if user_signed_in? && current_user.id == tweet.user_id %>
+        <div class="right_box">
+          <div class="my_tweet">
+            <div class="tweet_my_text">
+              <%= tweet.text %>
+            </div>
+            <div class="tweet_time">
+              <%= tweet.created_at %>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <div class="tweet">
+          <div class="tweet_user_name" >
+            <%= tweet.user.name %>
+          </div>
+          <div class="tweet_text">
+            <%= tweet.text %>
+          </div>
+          <div class="tweet_time">
+            <%= tweet.created_at %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</main>
