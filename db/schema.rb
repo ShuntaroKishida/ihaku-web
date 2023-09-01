@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_08_21_050135) do
   create_table "tweets", charset: "utf8", force: :cascade do |t|
-    t.string "name", null: false
     t.text "text", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
