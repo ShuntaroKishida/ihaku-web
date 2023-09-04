@@ -144,7 +144,8 @@ header {
 .user li {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #6a57bd;
+    color: #fff;
+    background-color: #6a57bd;
     border: #6a57bd 1px solid;
     border-radius: 20px;
     list-style: none;
@@ -154,6 +155,10 @@ header {
 
 .user li:first-child {
     margin-left: 0;
+}
+
+.sign-up {
+    color: #949087;
 }
 
 /*
