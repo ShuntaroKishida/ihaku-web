@@ -1,0 +1,41 @@
+<main>
+  <div class="lesson">
+    <h1>お稽古のご案内</h1>
+    <div class="lesson-topbox">
+      <h2>休会</h2>
+      <ul>
+        <li class="lesson-btn"><%= link_to '料金', lesson_price_index_path %></li>
+        <li class="lesson-btn"><%= link_to '稽古日', lesson_days_path %></li>
+        <li class="lesson-btn"><%= link_to '持参物', lesson_bring_index_path, data: { turbo: false } %></li>
+        <li class="lesson-btn"><%= link_to '各種行事', lesson_events_path %></li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th><a>休会費</a></th>
+        <td>
+          <ul>
+            <li><a>授業料の2カ月分</a></li>
+            <li><a>※休会申し出時のみ</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a>年会費</a></th>
+        <td><a>6,000円/年</a></td>
+      </tr>
+      <tr>
+        <th><a>授業料</a></th>
+        <td><a>4,000円/回（一律）</a></td>
+      </tr>
+    </table>
+    <div class="notice">
+      <ul>
+        <li><a>※ 長期間欠席する場合のことです</a></li>
+        <li><a>※ 休会中でも、年会費は毎年お支払いください</a></li>
+        <li><a>※ 諸経費（水屋費など）を含みます</a></li>
+        <li><strong>※ 休会中でも、上記授業料にてお稽古は可能です</strong></li>
+      </ul>
+    </div>
+  </div>
+</main>

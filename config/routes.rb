@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   resources :home, only: [:index]
   resources :intro, only: [:index]
   resources :schedule, only: [:index]
-  resources :lesson, only: [:index]
   resources :access, only: [:index]
   resources :blog, only: [:index]
+  resources :lesson, only: [:index]
+  resources :lesson_price, only: [:index]
+  resources :lesson_days, only: [:index]
+  resources :lesson_bring, only: [:index]
+  resources :lesson_events, only: [:index]
+  resources :lesson_rest, only: [:index]
 end
