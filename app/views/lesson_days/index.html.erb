@@ -1,0 +1,60 @@
+<main>
+  <div class="lesson">
+    <h1>お稽古のご案内</h1>
+    <div class="lesson-topbox">
+      <h2>稽古日</h2>
+      <ul>
+        <li class="lesson-btn"><%= link_to '料金', lesson_price_index_path %></li>
+        <li class="lesson-btn"><%= link_to '持参物', lesson_bring_index_path, data: { turbo: false } %></li>
+        <li class="lesson-btn"><%= link_to '各種行事', lesson_events_path %></li>
+        <li class="lesson-btn"><%= link_to '休会', lesson_rest_index_path %></li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th><a>木曜日</a></th>
+        <td>
+          <ul>
+            <li><a>13:00 〜 17:00</a></li>
+            <li><a>18:00 〜 21:00</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a>金曜日</a></th>
+        <td>
+          <ul>
+            <li><a>13:00 〜 17:00</a></li>
+            <li><a>18:00 〜 21:00</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a>土曜日</a></th>
+        <td>
+          <ul>
+            <li><a>13:00 〜 17:00</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <div class="notice">
+      <ul>
+        <li><a>※ 基本的には 4回/月 となります</a></li>
+        <li><a>※ 夏季・冬季休暇があります（各1ヶ月弱）</a></li>
+        <li><strong>※ 上記以外の曜日・時間についても相談可能！</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="coment">
+    <p>
+      各時間帯で、だいたい2〜3名でお稽古しています。<br>
+      1名だけなんてときもあります！！<br>
+      1名でもちゃんとお稽古します。のびのびできますよ（笑）<br>
+      始まる時間も終わる時間も、そのときの人数や稽古内容で様々です。<br>
+      上記の時間はただの目安です。<br>
+      金曜日なんて、20時に始まって、22時過ぎに終わることもありますよ。<br>
+      いいんですよ。だいたいで。
+    </p>
+  </div>
+</main>

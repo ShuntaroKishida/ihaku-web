@@ -1,0 +1,86 @@
+<main>
+  <div class="lesson">
+    <h1>お稽古のご案内</h1>
+    <div class="lesson-topbox">
+      <h2>料金</h2>
+      <ul>
+        <li class="lesson-btn"><%= link_to '稽古日', lesson_days_path %></li>
+        <li class="lesson-btn"><%= link_to '持参物', lesson_bring_index_path, data: { turbo: false } %></li>
+        <li class="lesson-btn"><%= link_to '各種行事', lesson_events_path %></li>
+        <li class="lesson-btn"><%= link_to '休会', lesson_rest_index_path %></li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th>
+          <ul>
+            <li><a>授業料</a></li>
+            <li><a style="font-size: .75rem;">( 月謝制 )</a></li>
+          </ul>
+        </th>
+        <td>
+          <ul>
+            <li><a>高校生以下：6,000円</a></li>
+            <li><a>一般部　　：10,000円</a></li>
+            <li><a>初伝以上　：12,000円</a></li>
+            <li><a>奥伝以上　：14,000円</a></li>
+            <li><a>皆伝以上　：8,000円</a></li>
+            <li><a style="font-size: .725rem;">※毎月、初回稽古日にお支払いください</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a>入会費</a></th>
+        <td>
+          <ul>
+            <li><a>10,000円（一律）</a></li>
+            <li><a style="font-size: .8rem;">※入会時のみ</a></li>
+            <li><a style="font-size: .8rem;">※入会決定時にお支払いください</a></li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a>年会費</a></th>
+        <td>
+          <ul>
+            <li><a>高校生以下：12,000円</a></li>
+            <li><a>一般部　　：12,000円</a></li>
+            <li><a>初伝以上　：16,000円</a></li>
+            <li><a style="font-size: .725rem;">※入会初年度は不要です</a></li>
+            <li><a style="font-size: .725rem;">※毎年、前年の12月にお支払いください</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <div class="notice">
+      <ul>
+        <li><a>※ 諸経費（水屋費など）を含みます</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="simulation">
+    <h3>入会時お支払い費用例（一般部）</h3>
+    <table class="simulation-table">
+      <tr>
+        <th>入会費</th>
+        <td>10,000円</td>
+      </tr>
+      <tr>
+        <th>授業料</th>
+        <td>10,000円</td>
+      </tr>
+      <tr>
+        <th>合計</th>
+        <td>20,000円</td>
+      </tr>
+    </table>
+  </div>
+  <div class="coment">
+    <p>
+      私は、茶道教室を運営してお金持ちになりたいわけではありません。月に一回ちょっと贅沢な晩ごはんが食べられる程度でいいです。<br>
+      上記は、必要以上に高額な金額設定にはしておりません。<br>
+      しかしながら、それなりにお金のかかる事業なので、やはりそれなりのお金はかかります。<br>
+      茶道は決して安い趣味ではないと思いますが、なるべくたくさんの人に参加してもらえるように努力します。
+    </p>
+  </div>
+</main>

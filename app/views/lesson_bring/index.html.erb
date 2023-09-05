@@ -1,0 +1,103 @@
+<main>
+  <div class="lesson">
+    <h1>お稽古のご案内</h1>
+    <div class="lesson-topbox">
+      <h2>持参物</h2>
+      <ul>
+        <li class="lesson-btn"><%= link_to '料金', lesson_price_index_path %></li>
+        <li class="lesson-btn"><%= link_to '稽古日', lesson_days_path %></li>
+        <li class="lesson-btn"><%= link_to '各種行事', lesson_events_path %></li>
+        <li class="lesson-btn"><%= link_to '休会', lesson_rest_index_path %></li>
+      </ul>
+    </div>
+    <table>
+      <tr>
+        <th>
+          <ul>
+            <li><a>1.点前袱紗</a></li>
+            <li><a style="font-size: 0.625rem;">（てまえぶくさ）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">茶道具を拭くときに使ったりします</a></td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li><a>2.小袱紗</a></li>
+            <li><a style="font-size: 0.625rem;">（こぶくさ）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">茶道具の下に敷いて使ったりします</a></td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li><a>3.お懐紙</a></li>
+            <li><a style="font-size: 0.625rem;">（かいし）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">お皿やティッシュの役目をします</a></td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li><a>4.楊枝</a></li>
+            <li><a style="font-size: 0.625rem;">（ようじ）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">茶菓子を食べるときだけ使います</a></td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li><a>5.扇子</a></li>
+            <li><a style="font-size: 0.625rem;">（せんす）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">お辞儀するときに使います</a></td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li><a>6.替足袋</a></li>
+            <li><a style="font-size: 0.625rem;">（かえたび）</a></li>
+          </ul>
+        </th>
+        <td><a style="font-size: 0.8rem;">白いソックスでいいです</a></td>
+      </tr>
+    </table>
+    <div class="notice">
+      <ul>
+        <li><a>※ 画像の順序と合わせています</a></li>
+        <li><strong>※ 初回は「6」だけで結構です。他は教室で用意あります
+            </strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="gallery-image">
+      <%= image_tag("lesson-bring01.jpeg") %>
+    </div>
+    <div>
+      <ul class="gallery-thumbnails">
+        <li><%= image_tag("lesson-bring01.jpeg") %><a>点前袱紗</a></li>
+        <li><%= image_tag("lesson-bring02.jpeg") %><a>小袱紗</a></li>
+        <li><%= image_tag("lesson-bring03.jpeg") %><a>懐紙</a></li>
+        <li><%= image_tag("lesson-bring04.jpeg") %><a>楊枝</a></li>
+        <li><%= image_tag("lesson-bring05.jpeg") %><a>扇子紗</a></li>
+        <li><%= image_tag("lesson-bring06.jpeg") %><a>袱紗ばさみ</a></li>
+        <li><%= image_tag("lesson-bring07.jpeg") %><a>一覧</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="coment">
+    <p>
+      初めていらっしゃるときは、あまり気にしないでください。手ぶらでもOKです。<br>
+      服装については、なるべくキレイ目でお願いします。私がまあまあの潔癖症なので。<br>
+      子供の授業参観の一歩手前くらいの服装でいいです。<br>
+      上記の「6」ですが、要は「和室（茶室）に入るときはキレイな足元で」ということです。どっかの引越屋さんのサービス理念と同じようなものです。<br>
+      和服（着物）なら替足袋、洋服なら白いソックス、という感じです。まあ別に赤でも青でもいいんですけどね、洗いたてならば。白だと「汚れてませんよ」アピールが容易なのです。<br>
+      上記の「5」については、食後にオジサンが使っているアレではありません。
+    </p>
+  </div>
+</main>
