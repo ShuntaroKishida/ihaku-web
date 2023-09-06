@@ -41,6 +41,12 @@
               <%= f.password_field :password_confirmation, autocomplete: "off"%>
             </div>
           </div>
+          <div class='field'>
+            <p>管理者パスワード</p>
+            <div class='field-input'>
+              <%= f.password_field :admin_password, autocomplete: "admin_password" %>
+            </div>
+          </div>
           <div class='actions'>
             <%= f.submit "Create Account", class: 'btn'%>
           </div>
