@@ -38,7 +38,7 @@ https://docs.google.com/spreadsheets/d/1zxqg61azCHYgN7_Rh39OVa8xBqFOEX8mwDz_T7Tf
 
 [![Image from Gyazo](https://i.gyazo.com/f8b160670ab19ad3423ee6f474d69ace.png)](https://gyazo.com/f8b160670ab19ad3423ee6f474d69ace)
 
-[![Image from Gyazo](https://i.gyazo.com/a9ab765b283727f83c1e6e34def0cd12.png)](https://gyazo.com/a9ab765b283727f83c1e6e34def0cd12)
+[![Image from Gyazo](https://i.gyazo.com/6182ac9fa8df963d4e4df8b9a0e0dd67.png)](https://gyazo.com/6182ac9fa8df963d4e4df8b9a0e0dd67)
 
 ### 実装予定の機能
 ---------------------------------------------
