@@ -1,0 +1,77 @@
+.tweet_all {
+  border: 1px solid #949087;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgb(53, 255, 67);
+  box-shadow: 1px 1px 10px;
+}
+
+.my_tweet {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.tweet {
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+}
+
+.tweet_user_name {
+  color: #000;
+  font-size: 1.2rem;
+  padding-bottom: .2rem;
+}
+
+.tweet_my_text {
+  margin-left: 5rem;
+  text-align: left;
+  border: 1px solid #949087;
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.tweet_text {
+  border: 1px solid #949087;
+  padding: .5rem 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.tweet_time {
+  font-size: .75rem;
+  color: #000;
+  padding-top: .2rem;
+}
+
+.new_blog {
+  text-align: center;
+}
+
+.new_blog h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.new_blog_form {
+  display: grid;
+}
+
+.new_text {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.send_btn {
+  margin-top: 1rem;
+  font-size: 2rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #6a57bd;
+  color: #fff;
+}

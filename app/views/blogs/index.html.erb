@@ -1,0 +1,22 @@
+<main>
+  <div class="teewt_new_btn">
+    <%= link_to "投稿する", new_blog_path %>
+  </div>
+  <% @blogs.each do |blog| %>
+    <article class="post-home">
+      <div class="post-title">
+        <h2><%= blog.title %></h2>
+      </div>
+      <div class="post-thumb">
+        <p class="post-date">
+          <span><%= blog.created_at.strftime('%Y') %></span><%= blog.created_at.strftime('%m/%d') %>
+        </p>
+        <%= image_tag(blog.image, class: "post-img") %>
+      </div>
+      <p class="post-desc">
+        <%= blog.description %>
+      </p>
+      <p class="btn"><%= link_to '続きを読む', "#" %></p>
+    </article>
+  <% end %>
+</main>
