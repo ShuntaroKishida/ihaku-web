@@ -1,0 +1,12 @@
+<main>
+  <div class="new_blog">
+    <h3>新規ブログ入力画面</h3>
+    <%= form_with(model: @blog, local: true, class: "new_blog_form") do |form| %>
+      <%= form.text_field :title, placeholder: "タイトル", class: "new_text" %>
+      <%= form.file_field :image, placeholder: "画像ファイル", class: "new_text" %>
+      <%= form.text_area  :description, placeholder: "説明文", rows: "10", class: "new_text" %>
+      <%= form.password_field :admin_password, placeholder: "管理者パスワード", autocomplete: "admin_password", class: "new_text" %>
+      <%= form.submit "SEND", class: "send_btn" %>
+    <% end %>
+  </div>
+</main>
